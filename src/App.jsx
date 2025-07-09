@@ -7,7 +7,8 @@ import Profile from "./Profile";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Feed from "./Feed";
-import Connections from "./connections";
+import Connections from "./connections"; /// Adjust the import path as needed
+// Note: Ensure the path is correct based on your project structure
 import Requests from "./Requests";
 
 const App = () => {
