@@ -24,11 +24,14 @@ const Feed = () => {
   React.useEffect(() => {
     getFeed();
   }, []);
-
+  if (!feed) return null;
+  if (feed.length === 0) {
+    return <div className="flex justify-center my-10">No new users found.</div>;
+  }
   return (
     feed && (
       <div className="flex justify-center my-10">
-        <Card user={feed[3]} />
+        <Card user={feed[0]} />
       </div>
     )
   );

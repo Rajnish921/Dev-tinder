@@ -8,9 +8,9 @@ import { addUser } from "./utils/userSlice"; // Adjust the import path as needed
 const Editprofile = ({ user }) => {
   const [FirstName, setFirstName] = useState(user.FirstName);
   const [LastName, setLastName] = useState(user.LastName);
-  const [age, setAge] = useState(user.age);
-  const [Gender, setGender] = useState(user.Gender);
-  const [About, setAbout] = useState(user.About);
+  const [age, setAge] = useState(user.age || "");
+  const [Gender, setGender] = useState(user.Gender || "");
+  const [About, setAbout] = useState(user.About || "");
   const [photoUrl, setPhotoUrl] = useState(user.photoUrl); // <-- Fix: add setPhotoUrl
   const [error, setError] = useState("");
   const dispatch = useDispatch();
