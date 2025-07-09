@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Body from "./body";
+import Body from "./Body";
 import Login from "./Login";
 import Profile from "./Profile";
 import { Provider } from "react-redux";
