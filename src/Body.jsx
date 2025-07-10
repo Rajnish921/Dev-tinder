@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { addUser } from "./utils/userSlice";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "./utils/constant"; // Adjust the import path as needed // Change to your backend URL
+// Import useNavigate for navigation
 // Adjust the path as needed
-
-const BASE_URL = "http://localhost:5000"; // Change to your backend URL
 
 const Body = () => {
   const dispatch = useDispatch();
